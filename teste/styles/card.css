@@ -1,0 +1,77 @@
+@import url(/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --branco: #FFF;
+    --laranja: #EB9B00;
+    --azul-escuro: #002F52;
+    --preto: rgba(0, 0, 0, 0.85);
+    --fonte: "Poppins", sans-serif;
+    
+}
+
+body {
+    font-family: var(--fonte);
+    font-size: 1rem;
+    color: var(--preto);
+}
+
+.card {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card__infos__esquerda {
+    display: flex;
+}
+
+.card__info__esquerda-text {
+    margin-right: 1em;
+}
+
+.card__infos__esquerda-estrelas {
+    margin-bottom: .5em;
+}
+
+.card__titulo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--laranja);
+    line-height: 1.2rem;
+}
+
+.card__titulo-livro {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: .7em 0em;
+    line-height: 1.4rem;
+}
+
+.card__texto {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: normal;    
+}
+
+.card__info-img {
+    border-radius: 3px;
+}
+
+.card__infos__direita {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.card__botao__saiba-mais {
+    background-color: var(--laranja);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 3px;
+    justify-content: center;
+    display: flex;
+    padding: 1em 2.26em;
+}

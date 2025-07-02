@@ -1,0 +1,128 @@
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+    position: relative;
+}
+
+.cabecalho__menu-hamburguer  {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-left: 1em;
+    background-image: url(../assets/Menu.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cabecalho__titulo {
+    display: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container.menu {
+    gap: 1em;
+}
+
+.lista-menu {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 76vw;
+    left: 0;
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+
+.container__botao {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+.lista-menu__titulo, .lista-menu__itens {
+    padding: 1em;
+    padding-left: 2em;
+    background-color: var(--branco);
+}
+
+.lista-menu {
+    color: var(--laranja);
+    z-index: 10;
+}
+
+.lista-menu__titulo {
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__titulo, .cabecalho__titulo-negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 1.875rem;
+        display: block;
+        display: flex;
+    }
+
+    .cabecalho__titulo {
+        font-weight: 400;
+    }
+
+    .cabecalho__titulo-negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        font-size: 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    .opcoes__item {
+        padding: 1em;
+    }
+
+    .opcoes__item-link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-fav {
+        display: none;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+}

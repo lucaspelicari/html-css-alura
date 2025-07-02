@@ -3,19 +3,19 @@
     padding: 1em;
 }
 
-.contato > h2 and p {
+.contato > div > h2 and p {
     color: #002F52;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.contato > h2 {
+.contato > div > h2 {
     font-size: 18px;
     font-weight: 500;
 }
 
-.contato > p {
+.contato > div > p {
     font-weight: 300;
     margin: 1em 0 ;
 }
@@ -34,4 +34,35 @@
     background-image: url("imagens/Email.svg");
     background-repeat: no-repeat;
     padding-left: 2em;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato > div {
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .contato > div > h2 {
+        font-size: 24x;
+    }
+
+    .contato > input {
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+
+   .contato {
+    padding: 3em 20vw;
+   }
+
 }

@@ -2,3 +2,41 @@ footer {
     background-color: var(--branco);
     padding: 1em;
 }
+
+footer > ul {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+     footer {
+        display: flex;
+        justify-content: space-around;
+     }
+
+     footer > h2 {
+        font-size: 24px;
+     }
+
+    .footer-titulo {
+        font-size: 14px;
+        color: var(--cinza2);
+    }
+
+    footer > ul {
+        display: block;
+    }
+
+     footer > ul > li {
+        display: flex;
+        align-items: center;
+        margin: 0.5em 0;
+     }
+
+     footer > ul > li > a {
+        color: var(--cinza);
+        text-decoration: none;
+        margin-left: 0.5em;
+     }
+
+}
