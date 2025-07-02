@@ -9,6 +9,14 @@
     display: inline-block;
 }
 
+.cont-botao:checked ~ .container-rotulo > .burguer {
+    background-image: url("imagens/menu_black_24dp\ 1.svg");
+}
+
+.cont-botao:checked ~ .container-rotulo {
+    background: var(--azul-degrade);
+}
+
 header {
     background-color: var(--branco);
     display: flex;
@@ -127,6 +135,12 @@ header {
     .lista-menu-2 {
         margin: 2em;
     }
+
+    .cont-botao2:checked ~ .opcao-rotulo > .opcao-item3 {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
 }
 
 @media screen and (min-width: 1728px) {
